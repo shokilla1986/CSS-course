@@ -26,6 +26,11 @@ body{
    justify-content: space-between;
 }   
 
+.header_left, .header_right {
+   display: flex;
+   align-items: center;
+}
+
 .header__logo{
    margin: 0 41px 0 0;
 }
@@ -80,6 +85,7 @@ body{
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   text-align: center;
  }
 .product__card:not(:last-child) {
    width: 30%;
@@ -149,12 +155,14 @@ background-image: url(../image/for_kids.jpg);
 .item_cards_content {
  padding: 25px 28px 20px 16px;
  max-width: 314px;
+ line-height: 3;
 }
 
 .item_cards_content h5 {
    font-size: 13px;
    line-height: 16px;
    color: #000000;
+   line-height: 2;
 }
 
 .item_cards_content p {
@@ -178,8 +186,7 @@ background-image: url(../image/for_kids.jpg);
    justify-content: center;
    border: 1px solid #FF6A6A;
    align-items: center;
-   width: 211px;
-   height: 47px;
+   padding: 14px 38px 13px 38px;
    }
 
 .fetured_items_button button{
@@ -239,8 +246,6 @@ background-image: url(../image/for_kids.jpg);
 .footer__info{
   display: flex;
   justify-content: space-between;
- 
-
 }
 
 .footer__info__left{
@@ -259,37 +264,55 @@ background-image: url(../image/for_kids.jpg);
   text-align: center;
   color: #222224;
   padding: 150px 0 150px 0;
+
 }
 
 .footer__info__right h3{
    font-weight: bold;
    font-size: 24px;
    line-height: 29px;
+   line-height: 2;
 }
 .footer__info__right p{
    font-weight: 400;
    font-size: 18px;
    line-height: 22px;
+   line-height: 2;
+}
+.footer__form{
+   display: flex;
+   align-items: center;
 }
 
-.footer__input{
-   width :170px;
-   height :49px;
+.footer__input{   
    background-color: #E1E1E1;
    border: none;
    border-radius: 20px 0 0 20px;
+   padding: 20px 64px 20px 22px;
+}
+
+.footer__input:focus{
+   outline: none;
+   background-color: lightgreen;
+   color: white;
+   transition: all 1s;
 }
 
 .footer__button{
-   width: 100px;
-   height: 49px;
-  background-color: #F16D7F;
-  border: none;
-  border-radius: 0 20px 20px 0;
-  font-size: 14px;
+   background-color: #F16D7F;
+   border: none;
+   border-radius: 0 20px 20px 0;
+   font-size: 14px;
    line-height: 17px;
-   color: #FFFFFF
+   color: #FFFFFF;
+   padding: 19px;
 }
+.footer__button:hover{
+   cursor: pointer;
+   transition: all 1s;
+   opacity: 0.5;
+}
+
 .footer__bottom{
    background: #222224;
 }
@@ -306,5 +329,85 @@ background-image: url(../image/for_kids.jpg);
 }
 
 .social__media{
-   
+
+}
+
+
+.new_arrivals{
+   background-color: #F8F3F4;
+}
+
+.arrivals{
+   display: flex;
+   justify-content: space-between;
+}
+
+.arrivals__left{
+   font-size: 24px;
+   line-height: 29px;
+   color:  #F16D7F;
+   padding: 59px 0 60px 0;
+}
+
+.arrivals__right{
+   font-size: 14px;
+   line-height: 17px;
+   font-weight: 300;
+   color: #636363;
+   padding: 65px 0 66px 0;
+}
+
+.arrivals__right span{
+   color: #F16D7F;
+   font-weight: 700;
+}
+
+
+.catalog__filters{
+   display: flex;
+   padding: 61px 0 64px 0;
+   align-items: center;
+}
+.filter__left{
+   width: 30%;
+}
+.filter__left:hover{
+   cursor: pointer;
+   opacity: 0.8;
+   color: #EF5B70;
+}
+
+summary{
+   display: block;
+}
+
+summary::webkit-details-marker{
+   display: none;
+}
+
+.filter__left__title{
+   text-transform: uppercase;
+   color: #EF5B70;
+   border-left: 5px solid #EF5B70;;
+   border-bottom: 1px solid #EBEBEB;
+   padding: 11px 11px 11px 11px;
+}
+li{
+   list-style: none;
+}
+.category_items{
+   font-size: 14px;
+   line-height: 17px;
+   line-height: 2;
+   text-decoration: none;
+   color: #6F6E6E;
+}
+
+.filters__another{
+   display: flex;
+   justify-content: space-around;
+   width: 30%;
+   font-size: 14px;
+   line-height: 17px;
+   color: #6F6E6E;
 }
