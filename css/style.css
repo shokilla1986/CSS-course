@@ -271,17 +271,18 @@ background-image: url(../image/for_kids.jpg);
    font-weight: bold;
    font-size: 24px;
    line-height: 29px;
-   line-height: 2;
+   
 }
 .footer__info__right p{
    font-weight: 400;
    font-size: 18px;
    line-height: 22px;
-   line-height: 2;
+   
 }
 .footer__form{
    display: flex;
    align-items: center;
+   padding: 20px;
 }
 
 .footer__input{   
@@ -353,28 +354,36 @@ background-image: url(../image/for_kids.jpg);
    font-size: 14px;
    line-height: 17px;
    font-weight: 300;
-   color: #636363;
+  
    padding: 65px 0 66px 0;
-}
-
+   }
+.arrivals_ancor{
+   text-decoration: none;
+   color: #636363;
+   }
 .arrivals__right span{
    color: #F16D7F;
-   font-weight: 700;
+   font-weight: 700;  
 }
 
 
 .catalog__filters{
+   position: relative;
    display: flex;
+   justify-content: center;
    padding: 61px 0 64px 0;
    align-items: center;
 }
 .filter__left{
+   position: absolute;
+   left: 1px;
    width: 30%;
 }
 .filter__left:hover{
    cursor: pointer;
    opacity: 0.8;
    color: #EF5B70;
+   fill: #EF5B70;
 }
 
 summary{
@@ -411,3 +420,175 @@ li{
    line-height: 17px;
    color: #6F6E6E;
 }
+
+.fetured__pagination{
+   display: flex;
+   justify-content: center;
+}
+.pagination__items{
+   display: flex;
+   border: 1px solid #EBEBEB;
+}
+
+.pagination__select{
+   display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    }
+
+.pagination__select a{
+   text-decoration: none;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 19px;
+   color: #C4C4C4;
+}    
+.pagination__select a:hover{
+   cursor: pointer;
+   opacity: 0.8;
+   color: #EF5B70;
+}
+.pagination__button__left,.pagination__button__right{
+   border: none;
+   background: none;
+   padding: 15px 16px 15px 16px;
+}
+
+.pagination__button__left:hover,.pagination__button__right:hover{
+   cursor: pointer;
+   opacity: 0.8;
+   fill: #EF5B70;
+}
+
+.product__slaider{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #F7F7F7;
+}
+
+.slaider__button__left,
+.slaider__button__right{
+   border: none;
+   background: rgba(42, 42, 42, 0.15);
+}
+
+.slaider__button__left:hover,.slaider__button__right:hover{
+   cursor: pointer;
+   opacity: 0.8;
+   fill: #EF5B70;
+}
+
+.card__preview{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #FFFFFF;
+   margin-top: -64px;
+   border: 1px solid #EAEAEA;
+
+}
+
+.card__preview__header{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #FFFFFF;
+}
+
+.card__preview__header h3{
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 17px;   
+   color: #F16D7F;
+   padding: 64px 0 27px 0;
+   position: relative;
+}
+
+.card__preview__header h3::after{
+   content: "";
+   position: absolute;
+   bottom: 16px;
+   left: 0;
+   width: 63px;
+   height: 3px;
+   background-color: #EF5B70;
+   right: 0;
+   margin: 0 auto;
+   display block;
+}
+
+.card__preview__header h2{
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 22px;   
+   color: #4D4D4D;
+}
+
+.card__preview__header p{
+   width: 60%;
+   text-align: center;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 17px;
+   color: #5E5E5E;
+   padding: 48px 0 32px 0;
+}
+
+.card__preview__header span{
+   position: relative;
+   font-weight: 300;
+   font-size: 24px;
+   line-height: 29px;
+   color: #EF5B70;
+   }
+
+   .card__preview__header hr{
+      width: 60%;
+      height: 1px;
+      background-color: #EAEAEA;
+      border: 1px solid #EAEAEA;
+      margin: 65px 0 65px 0;
+   }
+
+   .card__preview__bottom{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .card__preview__choose{
+      display: flex;
+      justify-content: space-around;
+      gap: 28px;
+      font-size: 14px;
+      line-height: 17px;
+      color: #6F6E6E;
+   }
+
+.card__preview__add{
+   padding: 48px 0 64px 0;
+}
+
+   .add_cart{
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 15px 25px 15px 24px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #F26376;
+      border: 1px solid #FF6A6A;
+      gap: 24px;
+   }
+
+   .add_cart:hover{
+      cursor: pointer;
+      opacity: 0.8;
+   }
+
+   .add_cart:active{
+      cursor: pointer;
+      color: purple;
+   }
