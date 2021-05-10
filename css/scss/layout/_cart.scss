@@ -1,0 +1,208 @@
+.cart__container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+//стили для левой части экрана
+.cart__left {
+   @include column;
+}
+
+.cart__items {
+   padding: 96px  0 0 0;
+}
+
+
+.cart__items__item {
+  display: flex;
+  width: 652px;
+  margin: 0 0 40px 0;
+  box-shadow: 6px 8px 10px 2px  #E5E5E5;
+}
+
+.cart__item__info {
+   padding: 22px 30px 62px 31px;
+   text-align: left;
+   width: 260px;
+
+   & h3 {
+      @include textBig;  
+   }
+
+   & h4 {
+      color: #575757;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 400;
+      line-height: 1.5;
+   }
+
+   & span {
+      color: $color_pink;
+   }
+
+   & input {
+      width: 43px;
+      text-align: center;
+      border: 1px solid #EAEAEA;
+   }
+}
+
+.cart__item__close {
+   padding: 28px 22px 0 0;
+}
+   
+.cart__shoping {
+   @include spaceBetween;
+   padding: 72px 0 128px 0;
+}
+
+.cart__botton__form {
+   border: 1px solid #A4A4A4;
+   padding: 14px 38px 13px 38px;
+}
+
+.cart_button {
+   @include textSize;
+   color: $color_black;
+   border: none;
+   background-color: transparent;
+
+   &:hover {
+      cursor: pointer;
+      transition: all 1s;
+      opacity: 0.5;
+   }
+
+   &:active {
+      cursor: pointer;
+      transition: all 1s;
+      opacity: 0.5;
+      color: $color_gray;
+   }
+}
+
+//стили для правой части страницы
+.cart__right{
+   padding: 113px 0 0 0;;
+   width: 360px;
+}
+
+//стили формы adress
+.adress {
+   line-height: 2;
+}
+
+.adress__legent{
+   @include textBody;
+   font-weight: 300;
+   color: $color_black;
+   line-height: 2;
+}
+
+.adress__form {
+   width: 95%;
+   padding: 12px 0 12px 17px;
+   margin: 0 0 21px 0;
+   @include textSmall;
+   color: $color_black;
+}
+
+.adress__button {
+   padding: 10px 14px 12px 15px;
+   font-weight: 300;
+   font-size: 11px;
+   line-height: 13px;
+   color: #4A4A4A;
+   border: 1px solid #A4A4A4;
+   background-color: $color_white;
+
+   &:hover {
+      cursor: pointer;
+      transition: all 1s;
+      opacity: 0.5;
+   }
+
+   &:active {
+      cursor: pointer;
+      transition: all 1s;
+      opacity: 0.5;
+      color: $color_gray;
+   }
+}
+
+//стили для total
+.cart__total{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 360px;
+   height: 214px;
+   background-color: #F5F3F3;
+   margin: 70px 0 0 0;
+
+   //стиль для горизонтальной черты
+   & hr {      
+         width: 60%;
+         background-color: #E2E2E2;
+         border: 1px solid #E2E2E2;
+        align-self: center;
+      }   
+}
+
+
+
+//стили для строк с ценой
+
+.total__info {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   gap: 20px;
+   width: 85%;
+
+   & h3 {
+      font-size: 11px;
+      line-height: 13px;
+      font-weight: 400;
+      color: $color_black;
+   }
+
+   & h2 {
+      @include textBody;
+      color: $color_black;
+
+      & span {
+         color: $color_pink;
+      }
+   }
+}
+
+//стиль для кнопки 
+.total__button{
+      align-self: center;
+
+      &__button {
+         @include center;
+         background-color: $color_pink;
+         padding: 15px 43px 16px 41px;
+         @include textBody;
+         color: $color_white;
+         font-weight: 300;
+         border: 1px solid $color_pink;
+         gap: 24px;
+
+         &:hover{
+            cursor: pointer;
+            opacity: 0.8;
+            fill: $color_pink;
+         }
+
+         &:active{
+            cursor: pointer;
+            color: purple;
+            fill: purple;
+         }
+      }
+}

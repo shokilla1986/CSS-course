@@ -1,0 +1,79 @@
+.fetured_items {
+   &__heading{
+      text-align: center;
+      margin: 0 0 48px 0;
+   }
+
+   &__heading h3 {
+      font-size: 30px;
+      line-height: 36px;
+      color: $color_black;
+   }
+
+   &_heading h5 {
+      @include textSize;
+      color: #9F9F9F;
+   }
+   &__container {
+      @include spaceBetween;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 0 0 48px 0;
+   }
+
+   &_botton {
+      @include center;
+   }
+
+   &_form {
+      @include center;
+      border: 1px solid $color_pink;
+      padding: 14px 38px 13px 38px;
+   }
+   &_button {
+         @include textBody;
+         color: $color_pink;
+         border: none;
+         background-color: transparent;
+      
+         &:hover {
+            cursor: pointer;
+            transition: all 1s;
+            opacity: 0.5;
+         }
+      
+         &:active {
+            cursor: pointer;
+            transition: all 1s;
+            opacity: 0.5;
+            color: $color_gray;
+         }
+      }
+   }
+
+
+.item_cards {
+   background: #F8F8F8;
+
+   &_content {
+      padding: 25px 28px 20px 16px;
+      max-width: 314px;
+      line-height: 2;
+   }
+
+   &_content h5 {
+      @include textSmall;
+      color: $color_black;
+      line-height: 2;
+   }
+
+   &_content p {
+     @include textSize;
+     color: $color_gray;
+   }
+
+   &_content span {
+      @include textBody;
+      color: $color_pink;
+   }
+}

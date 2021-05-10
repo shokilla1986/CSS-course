@@ -1,0 +1,28 @@
+.main__header {
+   background-color: #F8F3F4;
+}
+
+.main__title {
+   @include spaceBetween;
+
+   &__left {
+      @include textBig;
+      color:  $color_pink;
+      padding: 59px 0 60px 0;
+   }
+
+   &__right {
+      @include textBody;
+      padding: 65px 0 66px 0;
+   }
+
+   &__right span {
+      color: $color_pink;
+      font-weight: 700;  
+   }
+
+   &__ancor {
+      text-decoration: none;
+      color: #636363;
+      }
+}

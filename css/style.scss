@@ -1,0 +1,66 @@
+@import './scss/utilities/_variables';
+@import './scss/utilities/mixins';
+
+
+
+
+*{
+   margin: 0;
+   padding: 0;
+   }
+   
+   body{
+      @include textBody;
+      }
+   
+   .container{
+      max-width: 1140px;
+      width: 100%;
+      margin: 0 auto;
+      }
+
+   //подключаем файлы стилей, которые встречаются на всех или на нескольких страницах
+   //здесь вставляем _header 
+   @import "scss/layout/header";
+
+   //здесь вставляем _footer
+   @import "scss/layout/footer";  
+
+   //вставляем блок fetured_items, который встречается на всех страницах, кроме корзины и регистрации 
+     @import "scss/layout/fetured_items";
+ 
+   //здесь подключаем общий стиль для шапки блока main на остальных страницах
+   @import "scss/layout/main_header";
+  
+
+   //далее подключаем стили, индивидуальные для каждой страницы
+
+   //вставляем стили Главной страницы
+   //вставляем блок _promo
+   @import "scss/layout/promo";
+   //вставляем блок product
+   @import 'scss/layout/product';   
+  
+   
+   //с Главной страницей закончили, переходим к следующим
+
+   //Вставляем стили для страницы Catalog
+   //стили для выдвигающихся фильтров
+   @import "scss/layout/filters";
+   //вставляем стили блока с пагинатором
+   @import "scss/layout/catalog__items";   
+
+
+   //подключаем стили для страницы Product
+   //стили для слайдера
+   @import "scss/layout/slayder";   
+   //стили card_info
+   @import "scss/layout/card__info"; 
+
+   
+   //подключаем стили к странице Cart
+   //стиль корзины 
+   @import "scss/layout/cart";
+
+   
+     
