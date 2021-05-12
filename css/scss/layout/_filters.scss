@@ -1,5 +1,5 @@
 .catalog__filters {
-   position: relative;
+  
    @include center;
    padding: 61px 0 64px 0;
   
@@ -32,17 +32,26 @@
    }
 }
 
+.fiter-content {
+   position: absolute;
+   width: 360px;
+   left: 0;
+   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+ }
+
 summary{
    display: block;
 
    &:webkit-details-marker{
       display: none;
    }
+
+   & li {
+      list-style: none;
+   }
 }
 
-li {
-   list-style: none;
-}
+
 
 .category_items{
    @include textBody;

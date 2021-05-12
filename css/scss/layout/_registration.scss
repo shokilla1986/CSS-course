@@ -1,0 +1,85 @@
+.reg__container {
+   display: flex;
+}
+//стиль для формы регистрации
+.reg__form {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   margin: 64px 128px 96px 0;
+
+   & legend {
+      @include textBody;
+      color: $color_black;
+   }
+
+   &__input {
+      padding: 12px 0 15px 16px;
+      @include textSmall;
+      color: #B1B1B1;
+      font-weight: 300;          
+
+      &:hover{
+         transform: scale(1.5) translateX(100px);
+         transition: 2s 1s;
+      }
+   }
+
+   &__radio {
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
+      color: $color_black;
+   }
+
+   & p {
+      @include textSmall;
+      color: #B1B1B1;
+      font-weight: 300;
+   }
+   &__btn {
+   background-color: pink;
+   border: none;
+   padding: 15px 20px 15px 12px;
+   width: 167px;
+
+      &:hover {
+         cursor: pointer;
+         transition: all 1s;
+         transform: rotate(360deg);
+         opacity: 0.5;
+      }
+
+      &:active {
+         cursor: pointer;
+         color: $color_gray_light;
+         opacity: 0.5;
+      }
+   }
+}
+
+
+//стили для блока справа 
+.reg__info {
+   margin: 64px 0 0 0;   
+   @include textBig;
+   
+
+   & p {
+      padding: 20px 0 20px 0;
+   }
+& ul {
+   list-style-image: url("../image/reg__li.svg");
+   list-style-position: inside;
+}
+
+   & li {
+      margin: 0 0 16px 0 ;
+     
+     }
+     li::before {
+      // content: url("image/reg__li.svg"); /* Добавляем маркер в шестнадцатеричном формате*/
+      padding-right: 5px; /* Расстояние от маркеров до текста */
+    
+     }
+}
