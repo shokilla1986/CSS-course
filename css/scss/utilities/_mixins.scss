@@ -1,0 +1,53 @@
+//миксины для расположения блоков
+
+@mixin center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+@mixin spaceBetween {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+@mixin column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+//миксин по шрифтам
+@mixin textSize {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+}
+
+@mixin  textBody {
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+}
+
+@mixin textSmall {
+      font-size: 13px;
+      line-height: 16px;
+      }
+
+@mixin textLarge {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight:400;
+}
+
+
+
+@mixin textBig {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 300;
+}
+            

@@ -1,0 +1,52 @@
+.fetured__pagination{
+  @include center;
+}
+
+//стили для пагинатора, цифры
+.pagination__items{
+   display: flex;
+   border: 1px solid $color_white;
+}
+
+.pagination__select{
+  @include spaceBetween;
+
+  &  a{
+   text-decoration: none;
+   @include textBody;
+   font-weight: 300;
+   color: #C4C4C4;
+}    
+
+   & a:hover{
+      cursor: pointer;
+      opacity: 0.8;
+      color: $color_pink;
+   }
+}
+
+//стили для пагинатора, стрелки 
+
+.pagination__button__left {
+   border: none;
+   background: none;
+   padding: 15px 16px 15px 16px;
+
+   &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      fill: $color_pink;
+   }
+}
+
+.pagination__button__right {
+   border: none;
+   background: none;
+   padding: 15px 16px 15px 16px;
+
+   &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      fill: $color_pink;
+   }
+}

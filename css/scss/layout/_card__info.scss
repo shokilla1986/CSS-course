@@ -1,0 +1,104 @@
+//стили для card__preview и составляющих
+.card__preview {
+      @include column;
+      background-color: #FFFFFF;
+      margin-top: -64px;
+      border: 1px solid #EAEAEA;
+
+      //стили для состовляющих блока card__preview__header
+   &__header{
+      @include column;  
+      background-color: #FFFFFF; 
+      
+      & h3{
+         @include textSize;
+         color: $color_pink;
+         padding: 64px 0 27px 0;
+         position: relative;
+
+         &::after{
+            content: "";
+            position: absolute;
+            bottom: 16px;
+            left: 0;
+            width: 63px;
+            height: 3px;
+            background-color: $color_pink;
+            right: 0;
+            margin: 0 auto;
+            display: block;
+         }
+      }
+
+      & h2{
+         font-weight: 300;
+         font-size: 18px;
+         line-height: 22px;   
+         color: #4D4D4D;
+      }
+
+      & p{
+         width: 60%;
+         text-align: center;
+         @include textSize;
+         color: $color_gray_light;
+         padding: 48px 0 32px 0;
+      }
+
+      & span{
+         position: relative;
+        @include textBig;
+         color: $color_pink;
+         }
+
+      & hr{
+         width: 60%;
+         height: 1px;
+         background-color: #EAEAEA;
+         border: 1px solid #EAEAEA;
+         margin: 65px 0 65px 0;
+      }   
+   }
+  
+      //стили для состовляющих блока card__preview__bottom
+   &__bottom {
+     @include column;
+   } 
+
+   //стили для состовляющих блока card__preview__choose
+   &__choose {
+      display: flex;
+      justify-content: space-around;
+      gap: 28px;
+      @include textSize;
+      color: $color_gray_light;
+   }
+
+   &__add {
+      padding: 48px 0 64px 0;
+   }
+}
+
+//стили для кнопки add to card
+.add_cart { 
+  @include center;
+   background-color: $color_white;
+   padding: 15px 25px 15px 24px;
+  @include textBody;
+   color: $color_pink;
+   fill: $color_pink;
+   border: 1px solid $color_pink;
+   gap: 24px;
+
+   &:hover{
+      cursor: pointer;
+      opacity: 0.8;
+      fill: $color_pink;
+   }
+
+   &:active{
+      cursor: pointer;
+      color: purple;
+      fill: purple;
+   }
+}

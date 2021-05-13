@@ -1,0 +1,19 @@
+@mixin featured_button {
+   @include textBody;
+   color: $color_pink;
+   border: none;
+   background-color: transparent;
+
+   &:hover {
+      cursor: pointer;
+      transition: all 1s;
+      opacity: 0.5;
+   }
+
+   &:active {
+      cursor: pointer;
+      transition: all 1s;
+      opacity: 0.5;
+      color: $color_gray;
+   }
+}

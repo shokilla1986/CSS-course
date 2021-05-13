@@ -1,0 +1,20 @@
+.header {
+   background-color: $color_black;
+   padding: 18px 0 19px 0;
+
+   &__container {
+     @include spaceBetween;
+   }
+
+   &__left, &__right {
+      @include center;
+   }   
+
+   &__logo {
+      margin: 0 41px 0 0;
+   }
+   
+   &__right a:not(:last-child) {
+      margin: 0 33px 0 0;
+   }
+}

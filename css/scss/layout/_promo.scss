@@ -1,0 +1,29 @@
+.promo {
+   background-color: #F1E4E6;
+   margin: 0 0 65px 0;
+
+   &__container {
+      min-height: 764px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-image: url('../image/man.png');
+      background-repeat: no-repeat;
+      background-position: -228px bottom;
+   }
+
+   &__text {
+      max-width: 377px;
+      width: 50%;
+      border-left: 12px solid $color_pink;
+      padding: 0 0 0 16px;
+   }
+
+   &__text p span {
+      font-size: 20px;
+  }
+
+   &__decor{
+     color:$color_pink ;
+ }
+}

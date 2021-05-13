@@ -1,0 +1,28 @@
+.product__slaider {
+   @include spaceBetween;
+   background-color: #F7F7F7;
+}
+
+//кнопки переключения слайдера
+
+.slaider__button__left {
+   border: none;
+   background-color: rgba(42, 42, 42, 0.15);
+
+   &:hover {
+   cursor: pointer;
+   opacity: 0.8;
+   fill: $color_pink;
+   }
+}
+
+.slaider__button__right {
+   border: none;
+   background-color: rgba(42, 42, 42, 0.15);
+
+   &:hover {
+   cursor: pointer;
+   opacity: 0.8;
+   fill: $color_pink;
+   }
+}

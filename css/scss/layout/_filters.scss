@@ -1,0 +1,70 @@
+.catalog__filters {
+   position: relative;
+   @include center;
+   padding: 61px 0 64px 0;
+  
+}
+//параметры для выдвигающего меню
+.filter__left{
+   position: absolute;
+   left: 0;
+   width: 30%;
+
+   &:hover{
+      cursor: pointer;
+      opacity: 0.8;
+      color: $color_pink;
+      fill: $color_pink;
+   }
+
+   &:active{
+      cursor: pointer;
+      opacity: 0.8;
+      fill: $color_black;
+   }
+
+   &__title {
+      text-transform: uppercase;
+      color: $color_pink;
+      border-left: 5px solid $color_pink;
+      border-bottom: 1px solid $color_white;
+      padding: 11px 11px 11px 11px;
+   }
+}
+
+.fiter-content {
+   position: absolute;
+   width: 360px;
+   left: 0;
+   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+ }
+
+summary{
+   display: block;
+
+   &:webkit-details-marker{
+      display: none;
+   }
+
+   & li {
+      list-style: none;
+   }
+}
+
+
+
+.category_items{
+   @include textBody;
+   line-height: 2;
+   text-decoration: none;
+   color: $color_gray_light;
+}
+
+//стили для фильтор в центре
+.filters__another{
+   display: flex;
+   justify-content: space-around;
+   width: 30%;
+   @include textBody;
+   color: $color_gray_light;
+}

@@ -1,0 +1,130 @@
+.footer {
+   margin: 96px 0 0 0;
+
+   &__head {
+      background-color: $color_black;
+   }
+
+   &__heading {
+      @include spaceBetween;
+      color: $color_white;
+      gap: 30px;
+   }
+
+   &__heading h4 {
+      @include textLarge;
+      color: $color_white;
+   }
+
+   &__heading p {
+      @include textSize;
+      color: $color_white;
+      text-align: center;
+   }
+
+   &_card {
+      width: 30%;
+      padding: 104px 0 103px 0;
+   }
+
+   &__heading__delivery,
+   &__heading__sales,
+   &__heading__quality {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__middle {
+      background-image: url('../image/footer__fon.png');
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+
+   &__info{
+      @include spaceBetween;
+    }
+
+   &__info__left {
+      width: 360px;
+      height: 225px;
+      align-items: center;
+      @include textLarge;
+      color: $color_black;
+      text-align: center;
+      padding: 96px 0 120px 0;
+   } 
+
+   &__info__right {
+      align-self: center;
+      text-align: center;
+      color: $color_black;
+      padding: 150px 0 150px 0;    
+    }
+
+   &__info__right h3{
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+   } 
+
+   &__info__right p{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+   }
+
+   &__form {
+      @include center;
+      padding: 20px;
+   }
+
+   &__input {   
+      background-color: #E1E1E1;
+      border: none;
+      border-radius: 20px 0 0 20px;
+      padding: 20px 64px 20px 22px;
+   }
+
+   &__input:focus{
+      outline: none;
+      background-color: lightgreen;
+      color: white;
+      transition: all 1s;
+   }
+
+   &__button{
+      background-color: $color_pink;
+      border: none;
+      border-radius: 0 20px 20px 0;
+      @include textSize;
+      color: $color_white;
+      padding: 19px;
+
+      &:hover {
+         cursor: pointer;
+         transition: all 1s;
+         opacity: 0.5;
+      }
+
+      &:active {
+         cursor: pointer;
+         color: $color_gray_light;
+         opacity: 0.5;
+      }
+   }
+
+   &__bottom{
+      background: $color_black;
+   }
+}
+
+.bottom__container {
+   @include spaceBetween;
+}
+
+.all_right {
+   @include textBody;
+   color: $color_white;
+   padding: 30px 0 30px 0;
+}
