@@ -26,3 +26,37 @@
       color: #636363;
       }
 }
+
+//стили для планшета  768px
+@media screen and (max-width: 768px) {
+   .main__title {
+
+      &__left {
+         padding: 59px 0 60px 16px;
+      }
+
+      &__right {
+        
+         padding: 65px 16px 66px 0;
+      }
+   
+   }
+      
+}
+
+//стили для мобильных от 499рх
+@media screen and (max-width: 499px) {
+   .main__title {
+      flex-direction: column;
+
+      &__left {
+         padding: 24px 0 32px 0
+      }
+
+      &__right {        
+         padding: 0 0 46px 0;
+      }
+   
+   }
+
+}

@@ -51,8 +51,6 @@ summary{
    }
 }
 
-
-
 .category_items{
    @include textBody;
    line-height: 2;
@@ -60,7 +58,7 @@ summary{
    color: $color_gray_light;
 }
 
-//стили для фильтор в центре
+//стили для фильтров в центре
 .filters__another{
    display: flex;
    justify-content: space-around;
@@ -68,3 +66,42 @@ summary{
    @include textBody;
    color: $color_gray_light;
 }
+
+//стили для планшетов 768рх
+@media screen and (max-width: 768px){
+   .catalog__filters{
+      justify-content: flex-end;
+   }
+
+   .filter__left{
+      padding: 0 0 0 16px;
+   }
+
+   .filters__another{
+      width: 47%;
+   }
+}
+
+
+//стили для мобильных 
+@media screen and (max-width: 499px){
+   .filter__left{
+      & span {
+         display: none;
+      }
+
+      & svg {
+         width: 32px;
+         height: 25px;
+}
+      }
+      .filters__another{
+         width: 75%;
+         font-size: 12px;
+         padding: 0 8px 0 0;
+      }
+   }
+   
+
+ 
+

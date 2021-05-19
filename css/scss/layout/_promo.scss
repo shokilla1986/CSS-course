@@ -1,3 +1,4 @@
+//стили для декстопа
 .promo {
    background-color: #F1E4E6;
    margin: 0 0 65px 0;
@@ -13,17 +14,64 @@
    }
 
    &__text {
-      max-width: 377px;
-      width: 50%;
+      font-weight: 900;
+      font-size: 48px;
       border-left: 12px solid $color_pink;
-      padding: 0 0 0 16px;
+      padding: 0 84px 0 16px;
+      line-height: 1;
    }
 
-   &__text p span {
-      font-size: 20px;
+   &__text p {
+      font-size: 32px;
   }
+
+  
 
    &__decor{
      color:$color_pink ;
  }
+}
+
+//стили для планшета 768px
+@media screen and (max-width: 768px){
+   .promo {
+      height: 368px;
+      margin: 0 0 20px 0;
+
+      &__container {
+         min-height: 368px;
+         background-image: url('../image/man__tablet.png');
+         background-position: 0px bottom
+      }
+
+      &__text {
+         font-size: 44px;
+         line-height: 1;    
+         font-weight: 900;            
+         padding: 0 33px 0 16px;
+      }
+      &__text p {
+         font-size: 24px;
+     }
+   }
+}
+
+//стиль для мобильных
+
+@media screen and (max-width: 499px){
+  .promo {
+   margin: 0 0 64px 0;
+
+   &__container {
+      background-image: none;
+   }
+
+   &__text {
+      font-size: 38px;
+      text-align: center;
+   }
+  }
+  
+  
+
 }
