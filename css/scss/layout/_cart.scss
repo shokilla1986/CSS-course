@@ -37,7 +37,7 @@
       font-weight: 400;
       line-height: 1.5;
    }
-
+   
    & span {
       color: $color_pink;
    }
@@ -87,19 +87,21 @@
 .cart__right{
    padding: 113px 0 0 0;;
    width: 360px;
+   
 }
 
 //стили формы adress
 .adress {
    line-height: 2;
+
+   & h4{
+      @include textBody;
+      font-weight: 300;
+      color: $color_black;
+      line-height: 2;
+   }
 }
 
-.adress__legent{
-   @include textBody;
-   font-weight: 300;
-   color: $color_black;
-   line-height: 2;
-}
 
 .adress__form {
    width: 95%;
@@ -146,7 +148,8 @@
    & hr {      
          width: 60%;
          background-color: #E2E2E2;
-         border: 1px solid #E2E2E2;
+         border: none;
+         height: 3px;
         align-self: center;
       }   
 }
@@ -190,7 +193,7 @@
          @include textBody;
          color: $color_white;
          font-weight: 300;
-         border: 1px solid $color_pink;
+         border: none;
          gap: 24px;
 
          &:hover{

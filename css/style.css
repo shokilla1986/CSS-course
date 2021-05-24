@@ -325,6 +325,7 @@ body {
 }
 
 .item_cards {
+  width: 360px;
   background: #F8F8F8;
 }
 
@@ -354,6 +355,58 @@ body {
   line-height: 19px;
   font-weight: 400;
   color: #F16D7F;
+}
+
+.card_img {
+  width: 100%;
+  display: block;
+}
+
+.card__img__block {
+  position: relative;
+}
+
+.card__overlay {
+  /* outline: 2px solid red; */
+  background: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* display: none; */
+  opacity: 0;
+  /*  transform: scale(0);
+   transform-origin: right top; */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.item_cards:hover .card__overlay {
+  /* display: flex; */
+  opacity: 1;
+  /* transform: scale(1); */
+}
+
+.card__add {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #FFFFFF;
+}
+
+.card__add:hover {
+  background-color: #fff;
+  color: grey;
 }
 
 .main__header {
@@ -776,9 +829,9 @@ summary li {
 
 .card__preview__header hr {
   width: 60%;
-  height: 1px;
+  height: 3px;
   background-color: #EAEAEA;
-  border: 1px solid #EAEAEA;
+  border: none;
   margin: 65px 0 65px 0;
 }
 
@@ -967,7 +1020,7 @@ summary li {
   line-height: 2;
 }
 
-.adress__legent {
+.adress h4 {
   font-family: Lato;
   font-size: 16px;
   line-height: 19px;
@@ -1030,7 +1083,8 @@ summary li {
 .cart__total hr {
   width: 60%;
   background-color: #E2E2E2;
-  border: 1px solid #E2E2E2;
+  border: none;
+  height: 3px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1094,7 +1148,7 @@ summary li {
   font-weight: 400;
   color: #FBFBFB;
   font-weight: 300;
-  border: 1px solid #F16D7F;
+  border: none;
   gap: 24px;
 }
 
@@ -1128,12 +1182,13 @@ summary li {
   margin: 64px 128px 96px 0;
 }
 
-.reg__form legend {
+.reg__form h3 {
   font-family: Lato;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
   color: #222224;
+  font-weight: 300;
 }
 
 .reg__form__input {
