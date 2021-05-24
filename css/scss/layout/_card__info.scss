@@ -94,6 +94,7 @@
    gap: 24px;
 
    &:hover{
+      transform: scale(1.2);
       cursor: pointer;
       opacity: 0.8;
       fill: $color_pink;

@@ -1,3 +1,4 @@
+//общие стили блока
 .fetured_items {
    &__heading{
       text-align: center;
@@ -29,6 +30,11 @@
       @include center;
       border: 1px solid $color_pink;
       padding: 14px 38px 13px 38px;
+
+      &:hover{
+         transform: scale(1.1);
+         transition: 1s;
+      }
    }
    &_button {
          @include textBody;
@@ -51,7 +57,7 @@
       }
    }
 
-
+//стили карточки
 .item_cards {
    width: 30%;
    background: #F8F8F8;
@@ -77,6 +83,15 @@
       @include textBody;
       color: $color_pink;
    }
+
+   &_content a {
+      text-decoration: none;
+      color: $color_black;
+
+      &:hover {
+         color: $color_pink;
+      }
+   }
 }
 
 .card_img {
@@ -84,7 +99,7 @@
    display: block;
  }
 
-
+//стиль для добавления скрытой кнопки Add
 .card__img__block{
    position: relative;
 }
@@ -102,29 +117,29 @@
    justify-content: center;
    align-items: center;
    
-   /* display: none; */
    opacity: 0;
-  /*  transform: scale(0);
-   transform-origin: right top; */
    transition: 0.5s;
  }
 
- .item_cards:hover .card__overlay {
-   /* display: flex; */
+ .card__img__block:hover .card__overlay {   
    opacity: 1;
-   /* transform: scale(1); */
  }
-
+//стиль кнопки Add
  .card__add {
    padding: 10px 20px;
    background-color: transparent;
    color: #fff;
    border: 1px solid #FFFFFF;
- }
- .card__add:hover {
-   background-color: #fff;
-   color: grey;
- }
+ 
+   &:hover {
+      background-color:transparent;
+      color: $color_white;
+      cursor: pointer;
+   }
+   &:active{
+      background-color: $color_pink;
+   }
+}
  
 
 //стиль для планшетов 768px

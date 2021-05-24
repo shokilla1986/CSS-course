@@ -21,6 +21,34 @@
    }
 }
 
+//стили для кнопок навигации по сайту
+.menu__catalog {
+   fill:#E8E8E8;
+
+   &:hover{
+   cursor: pointer;
+   fill: $color_pink;
+   }
+}
+
+.menu_profile {
+   fill:#E8E8E8;
+
+   &:hover{
+   cursor: pointer;
+   fill: $color_pink;
+   }
+} 
+
+.menu_cart {
+   fill:#E8E8E8;
+
+   &:hover{
+   cursor: pointer;
+   fill: $color_pink;
+   }
+}
+
 //стили для кнопок меню и скрытого меню справа
 .menu__btn {
    background-color: transparent;
@@ -28,6 +56,11 @@
    margin: 0 33px 0 0;
    fill:#E8E8E8;
    position: relative;
+
+   &:hover {
+      cursor: pointer;
+      fill: $color_pink;
+   }
 
    &:active {
       fill: $color_pink;
@@ -41,6 +74,11 @@
    top: 16px;
    right: 17px;
    fill:#6F6E6E;
+
+   &:hover{
+      cursor: pointer;
+      fill: $color_pink;
+   }
 
    &:active {
       fill: $color_pink;
@@ -57,19 +95,19 @@
    min-height: 764px;
    background: #FFFFFF;
    padding: 37px 0 0 34px
-   
+     
 }
 
 .open {
    display: block;
-   z-index: 2;
+   z-index: 3;
 }
 
 .close {
    display: none;
 }
 
-//стили для элементов меню
+//стили для элементов скрытого меню
 .menu__title {
    margin-bottom: 24px;
    @include textSize;
@@ -96,11 +134,16 @@
   
 }
 
-.nav__link {
+.nav__link {  
    text-decoration: none;
    @include textSize;
    font-weight: 400;
    color: $color_gray_light;
+
+   &:hover{
+      cursor: pointer;
+      color: $color_pink;
+   }
 }
 
 

@@ -14,6 +14,7 @@
    }
 
    &__text {
+      width: 45%;
       font-weight: 900;
       font-size: 48px;
       border-left: 12px solid $color_pink;
@@ -67,6 +68,7 @@
    }
 
    &__text {
+      width: 100%;
       font-size: 38px;
       text-align: center;
    }
