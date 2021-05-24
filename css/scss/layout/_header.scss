@@ -1,3 +1,5 @@
+//общие стили для header
+//стили для декстопа
 .header {
    background-color: $color_black;
    padding: 18px 0 19px 0;
@@ -16,5 +18,106 @@
    
    &__right a:not(:last-child) {
       margin: 0 33px 0 0;
+   }
+}
+
+//стили для кнопок меню и скрытого меню справа
+.menu__btn {
+   background-color: transparent;
+   border: none;
+   margin: 0 33px 0 0;
+   fill:#E8E8E8;
+   position: relative;
+
+   &:active {
+      fill: $color_pink;
+   }
+}
+
+.menu__close {
+   background-color: transparent;
+   border: none;
+   position: absolute;
+   top: 16px;
+   right: 17px;
+   fill:#6F6E6E;
+
+   &:active {
+      fill: $color_pink;
+   }
+}
+
+//стили состояния и позиционирования меню
+.menu__nav {
+   display: none;
+   position: absolute;
+   top: 80px;
+   right: 0;
+   width: 232px;
+   min-height: 764px;
+   background: #FFFFFF;
+   padding: 37px 0 0 34px
+   
+}
+
+.open {
+   display: block;
+   z-index: 2;
+}
+
+.close {
+   display: none;
+}
+
+//стили для элементов меню
+.menu__title {
+   margin-bottom: 24px;
+   @include textSize;
+   font-weight: 700;
+   color: $color_black;
+}
+
+.menu__heading {
+   margin-bottom: 12px;
+   @include textSize;
+   font-weight: 400;
+   color: $color_pink;
+}
+
+.nav__list {
+   margin-bottom: 20px;
+   padding-left: 54px;
+   list-style: none;
+   @include textSize;
+}
+
+.nav__item {
+   margin-bottom: 11px;
+  
+}
+
+.nav__link {
+   text-decoration: none;
+   @include textSize;
+   font-weight: 400;
+   color: $color_gray_light;
+}
+
+
+//медиа запросы
+
+//разрешение планшет 768px
+@media screen and (max-width: 768px){
+
+   .header{
+      padding: 18px 0 19px 32px;
+   }
+}
+
+
+//стили для мобильных от 499рх
+@media screen and (max-width: 499px){
+   .menu_profile, .menu_cart {
+      display: none;
    }
 }

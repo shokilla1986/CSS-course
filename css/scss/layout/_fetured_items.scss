@@ -53,7 +53,7 @@
 
 
 .item_cards {
-   width: 360px;
+   width: 30%;
    background: #F8F8F8;
   
    &_content {
@@ -126,3 +126,42 @@
    color: grey;
  }
  
+
+//стиль для планшетов 768px
+ @media screen and (max-width: 768px) and (min-width:500px){
+   .fetured_items{
+      &__heading {
+         margin: 0 0 72px 0;
+      }
+
+      &__container{
+         gap: 16px;
+         justify-content: center;
+         margin: 0 0 32px 0;
+      }
+   }
+
+   .item_cards {
+      width: 47%;
+
+      &:nth-child(9n){
+         display: none;
+      }
+   }
+}
+//  cтили для мобильных от 499рх
+@media screen and (max-width: 499px){
+   .fetured_items{
+      &__heading {
+         margin: 0 0 72px 0;
+      }
+      &__container{
+        
+         flex-direction: column;
+         margin: 0 0 32px 0;
+      }
+   }
+   .item_cards {
+      width: 90%;
+   }
+}

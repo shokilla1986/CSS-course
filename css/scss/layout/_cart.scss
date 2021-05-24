@@ -16,9 +16,9 @@
 
 .cart__items__item {
   display: flex;
-  width: 652px;
   margin: 0 0 40px 0;
   box-shadow: 6px 8px 10px 2px  #E5E5E5;
+  position: relative;
 }
 
 .cart__item__info {
@@ -28,6 +28,7 @@
 
    & h3 {
       @include textBig;  
+      
    }
 
    & h4 {
@@ -50,7 +51,9 @@
 }
 
 .cart__item__close {
-   padding: 28px 22px 0 0;
+   position: absolute;
+   top: 28px;
+   right: 24px;
 }
    
 .cart__shoping {
@@ -154,8 +157,6 @@
       }   
 }
 
-
-
 //стили для строк с ценой
 
 .total__info {
@@ -208,4 +209,102 @@
             fill: purple;
          }
       }
+}
+
+@media screen and (max-width: 768px){
+   .cart__container {
+      flex-direction: column;      
+    }
+
+    .cart__items {
+      width: 94%;
+      padding: 59px  0 0 0;
+   }
+
+   .cart__shoping{
+      justify-content: space-evenly;
+      padding: 62px 0 64px 0;
+   }
+
+   .cart__right{
+      padding:  0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      
+   }
+
+   .adress{
+      width: 45%;
+   }
+
+   .cart__total{
+      width: 45%;
+      margin: 30px 0 0 0;
+   }
+}
+
+
+//стили для мобильных от 499рх
+@media screen and (max-width: 499px){
+   .cart__item__info {
+      padding: 13px 0 0 17px;
+
+      & h3 {
+         width: 80%;
+         font-size: 16px;
+         line-height: 19px
+      }
+
+      & h4 {
+         font-size: 14px;
+         line-height: 17px;
+      }
+      & input {
+         width: 22px;
+      }
+   }
+
+   .cart__item__close {
+      top: 17px;
+      right: 12px;
+
+      & svg {
+         width: 10px;
+         height: 12px;
+      }
+   }
+
+   .cart__shoping{
+      justify-content: space-around;
+   }
+
+   .cart__shoping__botton{
+   width: 47%;
+}
+   .cart__botton__form {      
+      padding: 8px 0 9px 0;
+      font-size: 12px;
+      line-height: 14px;
+   }
+
+   .cart_button {
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+   }
+
+   .cart__right{      
+      flex-direction: column;      
+   }
+
+   .adress{
+      width: 92%;
+      padding: 0 8px 0 9px;
+   }
+
+   .cart__total{
+      width: 100%;
+      margin: 30px 0 0 0;
+   }
 }

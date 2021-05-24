@@ -4,15 +4,18 @@
       background-color: #FFFFFF;
       margin-top: -64px;
       border: 1px solid #EAEAEA;
+     
 
       //стили для состовляющих блока card__preview__header
    &__header{
       @include column;  
       background-color: #FFFFFF; 
+      z-index: 2;
       
       & h3{
          @include textSize;
          color: $color_pink;
+         text-align: center;
          padding: 64px 0 27px 0;
          position: relative;
 
@@ -100,5 +103,30 @@
       cursor: pointer;
       color: purple;
       fill: purple;
+   }
+}
+
+//стили для планшетов 768рх
+@media screen and (max-width: 768px) and (min-width:500px){
+   .card__preview {
+      margin: 0 auto;
+
+      &__header {
+
+      }
+   }
+}
+
+
+//стили для мобильных
+@media screen and (max-width: 499px){
+   .card__preview {
+      &__choose {
+            font-size: 10px;
+      }      
+   }
+
+   .add_cart {
+      padding: 12px 56px;
    }
 }

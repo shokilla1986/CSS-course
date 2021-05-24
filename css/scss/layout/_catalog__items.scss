@@ -4,12 +4,16 @@
 
 //стили для пагинатора, цифры
 .pagination__items{
-   display: flex;
-   border: 1px solid $color_white;
+   display: flex;   
+   justify-content: space-between;
+   width: 30%;
+   border: 1px solid #EBEBEB;
 }
 
 .pagination__select{
   @include spaceBetween;
+  width: 100%;
+  
 
   &  a{
    text-decoration: none;
@@ -30,7 +34,7 @@
 .pagination__button__left {
    border: none;
    background: none;
-   padding: 15px 16px 15px 16px;
+   padding: 17px 16px 15px 16px;
 
    &:hover {
       cursor: pointer;
@@ -42,11 +46,26 @@
 .pagination__button__right {
    border: none;
    background: none;
-   padding: 15px 16px 15px 16px;
+   padding: 17px 16px 15px 16px;
 
    &:hover {
       cursor: pointer;
       opacity: 0.8;
       fill: $color_pink;
    }
+}
+
+//стили для планшетов 768px
+@media screen and (max-width: 768px){
+   .pagination__items{
+      width: 45%;
+   }
+}
+
+//стили для мобильных
+@media screen and (max-width: 499px){
+   .pagination__items{
+      width: 80%;
+   }
+   
 }

@@ -1,11 +1,14 @@
 .product__slaider {
-   @include spaceBetween;
+   position: relative;
+   @include center;
    background-color: #F7F7F7;
 }
 
 //кнопки переключения слайдера
 
 .slaider__button__left {
+   position: absolute;
+   left: 0;
    border: none;
    background-color: rgba(42, 42, 42, 0.15);
 
@@ -17,6 +20,8 @@
 }
 
 .slaider__button__right {
+   position: absolute;
+   right: 0;
    border: none;
    background-color: rgba(42, 42, 42, 0.15);
 
@@ -24,5 +29,20 @@
    cursor: pointer;
    opacity: 0.8;
    fill: $color_pink;
+   }
+}
+
+
+//стили для планшетов 768рх
+@media screen and (max-width: 768px) and (min-width:500px){
+   .product__slaider{
+      padding: 30px 0;
+   }
+}
+
+//стили для мобильных
+@media screen and (max-width: 499px){
+   .product__slaider{
+      padding: 85px 0;
    }
 }

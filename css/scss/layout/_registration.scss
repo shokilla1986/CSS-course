@@ -84,3 +84,38 @@
     
      }
 }
+
+//стили для планшетов 768рх
+@media screen and (max-width: 768px){
+   
+   .reg__form{
+      width: 45%;
+margin: 40px 25px 96px 17px;
+   }
+
+   .reg__info{
+      width: 45%;
+      margin: 40px 0 0 0;
+      font-size: 16px;
+      line-height: 19px;
+   }
+}
+
+//стиль для мобильных
+@media screen and (max-width: 499px){
+   .reg__container{
+      flex-direction: column;
+   }
+   
+   
+   .reg__form{
+      width: 90%;
+   }
+
+
+
+   .reg__info{
+      width: 90%;
+      margin: 0 9px;
+   }
+}
