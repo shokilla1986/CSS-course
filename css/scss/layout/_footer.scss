@@ -92,7 +92,7 @@
 
    &__input:focus{
       outline: none;
-      background-color: lightgreen;
+      background-color: $color_gray_light;
       color: white;
       transition: all 1s;
    }
@@ -134,17 +134,19 @@
 }
 
 .social__media {
-   &__ank:hover {
-      background-color: $color_pink;
+   &__ank:hover {     
       cursor: pointer;
       transition: all 1s;
-      opacity: 0.5;
    }
 
    &__ank:active {
       cursor: pointer;
       color: $color_black;
       opacity: 0.5;
+   }
+
+   & svg path:hover {
+      fill: $color_pink;
    }
 }
 

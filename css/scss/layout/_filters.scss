@@ -9,6 +9,8 @@
    position: absolute;
    left: 0;
    width: 30%;
+   z-index: 2;
+  
 
    &:hover{
       cursor: pointer;
@@ -29,6 +31,7 @@
       border-left: 5px solid $color_pink;
       border-bottom: 1px solid $color_white;
       padding: 11px 11px 11px 11px;
+      
    }
 }
 
@@ -37,11 +40,12 @@
    width: 360px;
    left: 0;
    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+   background-color: $color_white;
  }
 
 summary{
    display: block;
-
+   
    &:webkit-details-marker{
       display: none;
    }
@@ -56,6 +60,10 @@ summary{
    line-height: 2;
    text-decoration: none;
    color: $color_gray_light;
+
+   &:hover{
+      color: $color_pink;
+   }
 }
 
 //стили для фильтров в центре

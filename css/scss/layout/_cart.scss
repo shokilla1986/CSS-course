@@ -19,6 +19,11 @@
   margin: 0 0 40px 0;
   box-shadow: 6px 8px 10px 2px  #E5E5E5;
   position: relative;
+
+  &:hover{
+   transform: scale(1.1);
+   transition: 2s 1s;
+  }
 }
 
 .cart__item__info {
@@ -54,6 +59,13 @@
    position: absolute;
    top: 28px;
    right: 24px;
+   fill:#575757;
+
+   &:hover{
+      cursor: pointer;
+      fill: $color_pink;
+      
+   }
 }
    
 .cart__shoping {
@@ -64,18 +76,14 @@
 .cart__botton__form {
    border: 1px solid #A4A4A4;
    padding: 14px 38px 13px 38px;
-}
-
-.cart_button {
-   @include textSize;
-   color: $color_black;
-   border: none;
-   background-color: transparent;
 
    &:hover {
       cursor: pointer;
+      transform: scale(1.2);
       transition: all 1s;
       opacity: 0.5;
+      color: $color_pink;
+      border-color: $color_pink;
    }
 
    &:active {
@@ -84,6 +92,28 @@
       opacity: 0.5;
       color: $color_gray;
    }
+}
+
+.cart_button {
+   @include textSize;
+   color: $color_black;
+   border: none;
+   background-color: transparent;
+   &:hover {
+      cursor: pointer;
+      transition: all 1s;
+      opacity: 0.5;
+      color: $color_pink;
+      border-color: $color_pink;
+   }
+
+   &:active {
+      cursor: pointer;
+      transition: all 1s;
+      opacity: 0.5;
+      color: $color_gray;
+   }
+  
 }
 
 //стили для правой части страницы
@@ -107,7 +137,7 @@
 
 
 .adress__form {
-   width: 95%;
+   width: 90%;
    padding: 12px 0 12px 17px;
    margin: 0 0 21px 0;
    @include textSmall;
@@ -124,9 +154,12 @@
    background-color: $color_white;
 
    &:hover {
+      transform: scale(1.2);
       cursor: pointer;
       transition: all 1s;
       opacity: 0.5;
+      color: $color_pink;
+      border-color: $color_pink;
    }
 
    &:active {
@@ -198,6 +231,8 @@
          gap: 24px;
 
          &:hover{
+            transform: scale(1.2);
+            transition: 1s;
             cursor: pointer;
             opacity: 0.8;
             fill: $color_pink;
