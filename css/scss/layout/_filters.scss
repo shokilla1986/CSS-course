@@ -69,10 +69,53 @@ summary{
 //стили для фильтров в центре
 .filters__another{
    display: flex;
-   justify-content: space-around;
-   width: 30%;
+   justify-content: center;
+   width: 100%;
+   gap: 50px;
    @include textBody;
    color: $color_gray_light;
+
+   & svg {
+      fill: $color_gray_light;
+      &:hover{
+         cursor: pointer;
+         fill: $color_pink;
+   }
+ }
+}
+
+
+.filters__another__item{
+   position: relative;  
+   &:hover{
+      cursor: pointer;
+      fill: $color_pink;
+   } 
+
+   & summary:hover{
+      cursor: pointer;
+         color: $color_pink;
+   }
+}
+
+.filter__another__content{
+   position: absolute;
+   top: 22px;
+   z-index: 2;
+   width: 100px;
+   background-color:$color_white;
+   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+   & p, input, label {
+      padding: 9px;
+
+      &:hover {
+         cursor: pointer;
+         color: $color_pink;
+      }
+   }
+
+   
 }
 
 //стили для планшетов 768рх
@@ -109,7 +152,7 @@ summary{
          padding: 0 8px 0 0;
       }
    }
-   
 
  
+
 
