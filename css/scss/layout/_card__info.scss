@@ -66,6 +66,7 @@
       //стили для состовляющих блока card__preview__bottom
    &__bottom {
      @include column;
+     width: 100%;
    } 
 
    //стили для состовляющих блока card__preview__choose
